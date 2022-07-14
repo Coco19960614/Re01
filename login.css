@@ -1,0 +1,26 @@
+html,body{
+    margin: 0;
+    font-family: "PingFang SC";
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(keke.jpg) fixed no-repeat;
+    background-size: cover;
+}
+.login-form{
+    width: 240px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    background: inherit;
+    border-radius: 18px;
+    overflow: hidden;
+}

@@ -5,6 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>王可可的小空间</title>
+    <style>
+        .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: start;
+        align-items: auto;
+        align-content: start
+        }
+        .container:after {
+        display: block;
+        content: "";
+        margin: 10px;
+        flex: 999 999 auto;
+        }
+        .item {
+        flex: 0 0 auto;
+        margin: 10px;
+        }
+    </style>
 </head>
 <body>
     <link type="text/css" rel="stylesheet" href="keke.css">
@@ -13,10 +33,10 @@
     <!--
     <img src="keke.jpg" width="400px">
     -->
-    <a href="loading.html">loading</a>
-    <a href="login.html">login</a>
-    <a href="turntable.html">抽奖页面</a>
-    <p></p>
+    <a class="container container:after item" href="loading.html">loading</a>
+    <a class="container container:after item"href="login.html">login</a>
+    <a class="container container:after item"href="turntable.html">抽奖页面</a>
+    
 </body>
 </html>
 

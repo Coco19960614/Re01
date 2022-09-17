@@ -10,19 +10,20 @@ body{
     align-items: center;/*水平居中*/
     /*设置body高度100%窗口高度*/
     height: 100vh;
-    background: #000;
+    /* background: #000; */
 }
 a{
     /*相对定位*/
     position: relative;
+    left: 0px;
     margin: 10px;
-    width: 200px;
+    width: 150px;
     height: 50px;
     line-height: 50px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: px;
+    font-size: 15px;
     color: #fff;
     /* 渐变背景 */
     background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);

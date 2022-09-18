@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="colourfulButton.css">
+    <!-- <link rel="stylesheet" type="text/css" href="colourfulButton.css"> -->
     <!-- <link type="text/css" rel="stylesheet" href="keke.css"> -->
     <title>王可可的小空间</title>
     <style>
-        /* #keke{
-            margin: 0;
-            padding: 50px;
-            position: relative;
-            color: #fff;
-            font-size: 18px;
-            align-content: center;
-        } */
+        
         body{
             background-color: #eee;
         }
@@ -54,34 +47,61 @@
         .mgl8{
             margin-left: 8px;
         }
+        .daoHang{
+            padding: 10px 20px;
+            border-bottom: 1px solid rgb(190, 190, 190);
+            font-size: 13px;
+            color: #999;
+            text-decoration: none;
+
+        }
     </style>
     
 </head>
 <body class="flex" style="height: 99vh;">
     <!-- 侧边栏 -->
     <div style="flex: 1" class="baiSe flex column">
-        <div style="flex: 1;">
+        <!-- logo -->
+        <div 
+            style="
+                padding: 10px;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid #999;
+            "
+            class="flex"
+        >
+            <img
+                src="#"
+                width="40px"
+                height="40px"
+                alt=""
+            />
+            <div style="margin-left: 10px;">logo</div>
         </div>
-        <div style="flex: 6;" class="flex column ">
-            <div class=" mgl8 mgt8">
-                <a class="colourfulButton" href="loading.html">loading</a>
+
+        <!-- 导航栏 -->
+        <div class="flex1">
+            <div class="daoHang">
+                <a class="daoHang" href="loading.html">loading</a>
             </div>
-            <div class=" mgl8 mgt8">
-                <a class="colourfulButton" href="login.html">login</a>
+            <div class="daoHang">
+                <a class="daoHang" href="login.html">login</a>
             </div>
-            <div class=" mgl8 mgt8">
-                <a class="colourfulButton" href="turntable.html">抽奖页面</a>
+            <div class="daoHang">
+                <a class="daoHang" href="turntable.html">抽奖页面</a>
             </div>
-            
-            
-            
         </div>
+
     </div>
     <!-- 主区域 -->
     <div style="flex: 2" class="flex1 flex column">
         <!-- 头部栏 -->
         <div style="height: 60px;" class="baiSe flex">
-            <div style="text-align: center">王可可，我爱你！！</div>
+            <div style="padding: 20px;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid #999;">王可可，我爱你！！</div>
         </div>
         <!-- 内容栏 -->
         <div  class="flex1 flex">
@@ -112,12 +132,6 @@
         </div>
     </div>
     
-    <!-- <p id="keke" >王可可，我爱你！！  </p>
-    
-    <a class="colourfulButton" href="loading.html">loading</a>
-    <a class="colourfulButton" href="login.html">login</a>
-    <a class="colourfulButton" href="turntable.html">抽奖页面</a>
-     -->
 </body>
 </html>
 

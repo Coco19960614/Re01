@@ -4,25 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo01</title>
-</head>
-<body>
+    <!-- <link rel="stylesheet" type="text/css" href="colourfulButton.css"> -->
+    <!-- <link type="text/css" rel="stylesheet" href="keke.css"> -->
     <link rel="stylesheet" type="text/css" href="demo01.css">
-    <link rel="stylesheet" type="text/css" href="colourfulButton.css">
-    <div id="anime_box">
-        <div id="anime_point_1"></div>
-        <div id="anime_point_2"></div>
-        <div id="anime_point_3"></div>
-        <div id="anime_point_4"></div>
-        <div id="anime_point_5"></div>
-        <div id="anime_point_6"></div>
-        <div id="anime_point_7"></div>
-        <div id="anime_point_8"></div>
+    <title>Demo01</title>
+    <style>
+        
+        body{
+            background-color: #eee;
+        }
+
+        *{
+            margin: 0;
+            /* border: 1px solid black; */
+        }
+        .flex{
+            display: flex;
+        }
+        .baiSe{
+            background-color: white;
+        }
+        .huiSe{
+            background-color: #eee;
+        }
+        .flex1{
+            flex: 1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .row{
+            flex-direction: row;
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+        .mgl8{
+            margin-left: 8px;
+        }
+        .daoHang{
+            padding: 10px 20px;
+            border-bottom: 1px solid rgb(190, 190, 190);
+            font-size: 10px;
+            color: #999;
+            text-decoration: none;
+
+        }
+    </style>
+    
+</head>
+<body class="flex" style="height: 99vh;">
+    <!-- 侧边栏 -->
+    <div style="flex: 1" class="baiSe flex column">
+        <!-- logo -->
+        <div 
+            style="
+                padding: 10px;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid #999;
+            "
+            class="flex"
+        >
+            <img
+                src="keke.jpg"
+                width="40px"
+                height="40px"
+                alt=""
+                style="border-radius: 50px;"
+            />
+            <div style="margin-left: 10px;">logo</div>
+        </div>
+
+        <!-- 导航栏 -->
+        <div class="flex1">
+            <div class="daoHang">
+                <a class="daoHang" href="loading.html">loading</a>
+            </div>
+            <div class="daoHang">
+                <a class="daoHang" href="login.html">login</a>
+            </div>
+            <div class="daoHang">
+                <a class="daoHang" href="turntable.html">抽奖页面</a>
+            </div>
+        </div>
+
     </div>
-    <div id="loading_text">loading...</div>
+    <!-- 主区域 -->
+    <div style="flex: 2" class="flex1 flex column">
+        <!-- 头部栏 -->
+        <div style="height: 60px;" class="baiSe flex">
+            <div style="padding: 20px;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid #999;">王可可，我爱你！！</div>
+        </div>
+        <!-- 内容栏 -->
+        <div  class="flex1 flex">
+            <!-- 左区 -->
+            <div style="flex: 3;" class="flex column mg8">
+                <div id="anime_box">
+                    <div id="anime_point_1"></div>
+                    <div id="anime_point_2"></div>
+                    <div id="anime_point_3"></div>
+                    <div id="anime_point_4"></div>
+                    <div id="anime_point_5"></div>
+                    <div id="anime_point_6"></div>
+                    <div id="anime_point_7"></div>
+                    <div id="anime_point_8"></div>
+                </div>
+                <div id="loading_text">loading...</div>
+                <!-- 数据区 -->
+                <div class="flex ">
+                    <!-- 数据块 -->
+                    <!-- <div style="height: 100px" class="flex1 baiSe mgr8"></div>
+                    <div style="height: 100px" class="flex1 baiSe mgr8"></div>
+                    <div style="height: 100px" class="flex1 baiSe mgr8"></div>
+                    <div style="height: 100px" class="flex1 baiSe "></div> -->
+                </div>
+                <!-- 列表区 -->
+                <!-- <div class="flex column ">
+                    <div style="height: 100px" class="baiSe mgt8">
+                        
+                    </div>
+                    <div style="height: 100px" class="baiSe mgt8"></div>
+                    <div style="height: 100px" class="baiSe mgt8"></div>
+                </div> -->
+            </div>
+
+            <!-- 右区 -->
+            <div style="flex: 1;" class="flex column mgr8">
+                <!-- 提示区 -->
+                <div style="height: 150px" class="baiSe mgt8"></div>
+                <!-- 消息区 -->
+                <div style="height: 300px" class="baiSe mgt8"></div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    
+    
+    
        
-    <a style="position: absolute;left: 35%;bottom: 10%;" href="index.html">⬅back</a>
-       
+    
 
 </body>
 </html>

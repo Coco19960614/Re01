@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>王可可的心愿清单</title>
     <link rel="stylesheet" type="text/css" href="colourfulButton.css">
+    <style>
+      *{
+        /* 初始化。取消页面内外间距 */
+        margin: 0;
+        padding: 0;
+      }
+      body{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background: #000;
+      }
+    </style>
 </head>
 <body>
-    <a href="index.html" class="colourfulButton" style="position: absolute; left: 30%; bottom: 0%;">⬅back</a>
+    <a href="index.html" class="colourfulButton" style="position: absolute; left: 20%; bottom: 0%;">⬅back</a>
     <div id="my-lucky"></div>
 
 <script src="https://unpkg.com/lucky-canvas@1.7.25"></script>

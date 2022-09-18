@@ -1,20 +1,21 @@
 *{
     /* 初始化。取消页面内外间距*/
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
-body{
-    display: flex;/*弹性布局*/
-    flex-direction: column;
-    justify-content: center;/*垂直居中*/
-    align-items: center;/*水平居中*/
+/* body{ */
+    /* display: flex;弹性布局 */
+    /* flex-direction: column; */
+    /* justify-content: center;垂直居中 */
+    /* align-items: center;水平居中 */
     /*设置body高度100%窗口高度*/
-    height: 100vh;
+    /* height: 100vh; */
     /* background: #000; */
-}
-a{
+/* } */
+.colourfulButton{
     /*相对定位*/
     position: relative;
+    padding: 11%;
     left: 0px;
     margin: 10px;
     width: 150px;

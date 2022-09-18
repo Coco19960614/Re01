@@ -5,48 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="colourfulButton.css">
+    <!-- <link type="text/css" rel="stylesheet" href="keke.css"> -->
     <title>王可可的小空间</title>
     <style>
-        /* .container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: start;
-        align-items: auto;
-        align-content: start
-        }
-        .container:after {
-        display: block;
-        content: "";
-        margin: 10px;
-        flex: 999 999 auto;
-        }
-        .item {
-        flex: 0 0 auto;
-        margin: 10px;
-        } */
-        #keke{
+        /* #keke{
             margin: 0;
             padding: 50px;
             position: relative;
-            /* color: #fff; */
+            color: #fff;
             font-size: 18px;
             align-content: center;
+        } */
+        body{
+            background-color: #eee;
+        }
+
+        *{
+            margin: 0;
+            /* border: 1px solid black; */
+        }
+        .flex{
+            display: flex;
+        }
+        .baiSe{
+            background-color: white;
+        }
+        .huiSe{
+            background-color: #eee;
+        }
+        .flex1{
+            flex: 1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .row{
+            flex-direction: row;
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+        .mgl8{
+            margin-left: 8px;
         }
     </style>
     
 </head>
-<body>
-    <link type="text/css" rel="stylesheet" href="keke.css">
-        <p id="keke" >王可可，我爱你！！  </p>
+<body class="flex" style="height: 99vh;">
+    <!-- 侧边栏 -->
+    <div style="flex: 1" class="baiSe flex column">
+        <div style="flex: 1;">
+        </div>
+        <div style="flex: 6;" class="flex column ">
+            <div class=" mgl8 mgt8">
+                <a class="colourfulButton" href="loading.html">loading</a>
+            </div>
+            <div class=" mgl8 mgt8">
+                <a class="colourfulButton" href="login.html">login</a>
+            </div>
+            <div class=" mgl8 mgt8">
+                <a class="colourfulButton" href="turntable.html">抽奖页面</a>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    <!-- 主区域 -->
+    <div style="flex: 2" class="flex1 flex column">
+        <!-- 头部栏 -->
+        <div style="height: 60px;" class="baiSe flex">
+            <div style="text-align: center">王可可，我爱你！！</div>
+        </div>
+        <!-- 内容栏 -->
+        <div  class="flex1 flex">
+            <!-- 左区 -->
+            <div style="flex: 3;" class="flex column mg8">
+                <!-- 数据区 -->
+                <div class="flex ">
+                    <!-- 数据块 -->
+                    <div style="height: 100px" class="flex1 baiSe mgr8"></div>
+                    <div style="height: 100px" class="flex1 baiSe mgr8"></div>
+                    <div style="height: 100px" class="flex1 baiSe mgr8"></div>
+                    <div style="height: 100px" class="flex1 baiSe "></div>
+                </div>
+                <!-- 列表区 -->
+                <div class="flex column ">
+                    <div style="height: 100px" class="baiSe mgt8"></div>
+                    <div style="height: 100px" class="baiSe mgt8"></div>
+                    <div style="height: 100px" class="baiSe mgt8"></div>
+                </div>
+            </div>
+            <!-- 右区 -->
+            <div style="flex: 1;" class="flex column mgr8">
+                <!-- 提示区 -->
+                <div style="height: 150px" class="baiSe mgt8"></div>
+                <!-- 消息区 -->
+                <div style="height: 300px" class="baiSe mgt8"></div>
+            </div>
+        </div>
+    </div>
     
-    <!--
-    <img src="keke.jpg" width="400px">
-    -->
-    <a href="loading.html">loading</a>
-    <a href="login.html">login</a>
-    <a href="turntable.html">抽奖页面</a>
+    <!-- <p id="keke" >王可可，我爱你！！  </p>
     
+    <a class="colourfulButton" href="loading.html">loading</a>
+    <a class="colourfulButton" href="login.html">login</a>
+    <a class="colourfulButton" href="turntable.html">抽奖页面</a>
+     -->
 </body>
 </html>
 
